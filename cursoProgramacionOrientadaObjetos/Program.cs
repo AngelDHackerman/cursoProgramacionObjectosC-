@@ -25,19 +25,38 @@ int value4 = 10;
 
 bool myTest = value3 > 10;  // will be true or false
 
-if ((value1 + value2) > 10) {
+if ((value1 + value2) > 10)
+{
   Console.WriteLine("The answer is greater than 10.");
 }
 
 
-if (myTest) { // is true
+if (myTest)
+{ // is true
   Console.WriteLine("The answer is greater than 10, but this time using the bool type.");
 }
-else { 
+else
+{
   Console.WriteLine("The answer is LESS than 10.");
 }
 
-if ((value1 + value2 + value3 > 10) && (value4 == 10)) {
+if ((value1 + value2 + value3 > 10) && (value4 == 10))
+{
   Console.WriteLine("The Logic of 'AND' is working!");
 }
 
+
+
+int counter = 0;
+while (counter < 5)
+{
+  counter++;
+  Console.WriteLine(counter);
+}
+
+int counter2 = 10;
+do { 
+  Console.WriteLine(counter2);
+  counter2++;
+}
+while (counter2 < 15);
