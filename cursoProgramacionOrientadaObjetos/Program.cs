@@ -60,3 +60,13 @@ do {
   counter2++;
 }
 while (counter2 < 15);
+
+// For Loops 
+
+for (
+  int i = 0; i < 5; i++
+
+) {
+  Console.WriteLine($"This is the For Loop iteration {i}");
+}
+
