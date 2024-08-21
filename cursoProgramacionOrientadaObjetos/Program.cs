@@ -90,3 +90,22 @@ names.Add("Maria");
 foreach (string name in names) {
   Console.WriteLine($"Hello {name}");
 }
+
+// Arryas, list, indexing, foreach
+
+Console.WriteLine(names[1]);
+Console.WriteLine(names[^1]);  // the hat ^ makes you see the last indexed item
+
+foreach(string name in names[2..4]) {  // [2..4] here we are indexing from the 2nd to the 4th, (the last number is exclusive)
+  Console.WriteLine($"Indexing from 2nd to 4th: {name}");
+}
+
+// Arrays 
+
+var names2 = new string[] { "Angel", "Dario", "Juan"};  // this is also a list of t list<T>
+
+// names2.Add("Carlos");  // Arrays are fixed and cannot be changed
+
+foreach (string name2 in names2) {
+  Console.WriteLine($"Hello {name2}");
+}
