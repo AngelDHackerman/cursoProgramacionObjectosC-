@@ -120,3 +120,20 @@ namesSort.Sort();
 foreach (string name in namesSort) {
   Console.WriteLine($"Hello {name}, you were sorted!");
 }
+
+// Language Integraded Query LINQ
+
+List<int> scores = [97, 92, 81, 60];
+
+// Define the query expression.
+
+IEnumerable<int> scoreQuery = // IEnumerable<T> es una interfaz que permite la enumeración de una colección de elementos de tipo T.
+  from score in scores
+  where score > 80
+  select score;
+
+// Execute the query. 
+
+foreach (int i in scoreQuery) {
+  Console.WriteLine($"Number Queried: {i}");
+}
