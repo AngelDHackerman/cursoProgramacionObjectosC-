@@ -123,13 +123,14 @@ foreach (string name in namesSort) {
 
 // Language Integraded Query LINQ
 
-List<int> scores = [97, 92, 81, 60];
+List<int> scores = [3, 45, 82, 97, 92, 100, 81, 60];
 
 // Define the query expression.
 
 IEnumerable<int> scoreQuery = // IEnumerable<T> es una interfaz que permite la enumeración de una colección de elementos de tipo T.
   from score in scores
   where score > 80
+  orderby score descending
   select score;
 
 // Execute the query. 
