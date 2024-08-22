@@ -109,3 +109,14 @@ var names2 = new string[] { "Angel", "Dario", "Juan"};  // this is also a list o
 foreach (string name2 in names2) {
   Console.WriteLine($"Hello {name2}");
 }
+
+
+// Sorting and searching list 
+
+var namesSort = new List<string> {"Daniel", "Anna", "Alberto", "Carla", "Soila", "Mike"};
+
+namesSort.Sort();
+
+foreach (string name in namesSort) {
+  Console.WriteLine($"Hello {name}, you were sorted!");
+}
